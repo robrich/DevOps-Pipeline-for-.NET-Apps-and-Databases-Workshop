@@ -66,4 +66,4 @@ Run
 Other Options
 -------------
 
-- If you're building .NET 4.6, you'll need [.NET Targeting Pack](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html) for the target .NET version.  If you're building .NET 3.5 or earlier, you'll need the [.NET SDK](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html) for the target .NET version.
+- If you're building .NET 4.6, you'll need [.NET Targeting Pack](https://www.microsoft.com/net/targeting) for the target .NET version.  If you're building .NET 3.5 or earlier, you'll need the [.NET SDK](http://getdotnet.azurewebsites.net/target-dotnet-platforms.html) for the target .NET version.
