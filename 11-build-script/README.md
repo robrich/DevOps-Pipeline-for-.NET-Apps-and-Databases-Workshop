@@ -53,15 +53,6 @@ if not %errorlevel% equ 0 (
 
   `/m` says "use all cores"
 
-4. Add the lines to build the solution:
-
-```bash
-msbuild WebApplication1.sln /m /p:Configuration=Release
-if not %errorlevel% equ 0 (
-	exit /b %errorlevel%
-)
-```
-
 5. Add these lines to run the unit tests:
 
 ```bash
