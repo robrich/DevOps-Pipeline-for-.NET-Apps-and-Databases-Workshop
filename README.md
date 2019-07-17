@@ -29,7 +29,7 @@ We could use various tools in a DevOps Pipeline.  Perhaps we choose Trello for t
 
 We could also choose other tools.  Perhaps we choose Jira for task tracking, GitHub for source control, Jenkins for our C.I. server, Artifactory for the artifact repository, Octopus Deploy for the C.D. server, and Apache web servers in dev, test, and production.
 
-![DevOps Pipeline Tools](img/devops-pipeline-tools2.png)
+![DevOps Pipeline Tools](img/devops-pipeline-tools3.png)
 
 We could also choose Azure DevOps Boards for task tracking, Azure DevOps Repos for source control, Azure DevOps Pipelines for our C.I. server, Azure DevOps Artifacts for our artifact repository, Azure DevOps Pipelines for our C.D. server, and deploy to Azure Web Apps for our dev, test, and production web servers.
 

@@ -27,6 +27,8 @@ Configure
 
 2. Type `git remote add origin c:\git-server\DotNetWebsite`.  This creates a link from our project to the "server".
 
+   If you're using Git Bash you'll need to change the path to the unix-friendly slashes.  Type `git remote add origin /c/git-server/DotNetWebsite`.
+
 3. Type `git push origin master`.  This pushes the source code to the server.
 
 4. Type `git branch -u origin/master`.  This links the current local branch to the server's branch.

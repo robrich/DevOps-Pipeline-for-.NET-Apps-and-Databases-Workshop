@@ -21,9 +21,11 @@ Configure
 
 6. In the next screen, click `Create build configuration`.
 
-7. Again click `Manually`, enter the name `.NET Web Application`, and the Build configuration will get filled out automatically.
+7. This screen looks really similar to the previous screen.
 
-8. Click `Create`.
+8. Click `Manually`, enter the name `.NET Web Application`, and the Build configuration will get filled out automatically.
+
+9. Click `Create`.
 
 
 Create link to Version Control

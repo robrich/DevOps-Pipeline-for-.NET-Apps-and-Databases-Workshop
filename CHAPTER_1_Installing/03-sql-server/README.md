@@ -42,23 +42,31 @@ Configure
 
 TeamCity will use JDBC to connect on port 1433.  Let's enable TCP connections to SQL Server.
 
-1. Start -> `SQL Server 2017 Configuration Manager`.
+1. Start -> `Services`.
 
-2. Open `SQL Server Network Configuration`, and open `TCP/IP`.
+2. Right-click on `SQL Server Browser` and choose properties.
+
+3. Change Startup Type to `Automatic` if it isn't there already, and click apply.
+
+4. Click `Start` or `Restart`.
+
+5. Start -> `SQL Server 2017 Configuration Manager`.
+
+6. Open `SQL Server Network Configuration`, and open `TCP/IP`.
 
    ![Network Configuration](5-configuration-manager.png)
 
-3. Enable TCP/IP.
+7. Enable TCP/IP.
 
    ![Enable TCP](6-enable-tcp.png)
 
-4. Switch to the IP Addresses tab to see the port is 1433.
+8. Switch to the IP Addresses tab to see the port is 1433.
 
-5. Close the dialog, OK to the message about restarting.
+9. Close the dialog, OK to the message about restarting.
 
-6. Switch to the SQL Server Services, and restart the SQL Server service.
+10. Switch to the SQL Server Services, and restart the SQL Server service.
 
-   ![Restart Service](7-restart-service.png)
+    ![Restart Service](7-restart-service.png)
 
 
 Test it out

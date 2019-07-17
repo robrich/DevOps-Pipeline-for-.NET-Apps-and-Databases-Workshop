@@ -23,6 +23,8 @@ Configure
 
 2. Type `git remote add origin c:\git-server\BuildSite`.  This creates a link from our project to the "server".
 
+   If you're using Git Bash you'll need to change the path to the unix-friendly slashes.  Type `git remote add origin /c/git-server/BuildSite`.
+
 3. Type `git push -u origin master`.  This pushes the source code to the server and links the current local branch to the server's branch.
 
 

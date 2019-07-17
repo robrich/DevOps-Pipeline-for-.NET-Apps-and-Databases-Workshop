@@ -27,6 +27,18 @@ You could choose to make this a domain user rather than a local user.
 
 7. Open the newly created user, choose `Member Of`, and add `Administrators`.  The user may stop and start services, configure IIS settings, or other behaviors restricted to administrative users, so best to give this account access up front.
 
+8. Start menu -> Administrative tools -> `Local Security Policy`.
+
+9. Navigate to `Local Policies` -> `User Rights Assignment`.
+
+10. Open `Log on as a service`.
+
+11. Click `Add User or Group`.
+
+12. Add the `OctopusDeploy` user.
+
+13. Click OK many times.
+
 
 Setup: Create Database
 ----------------------
@@ -48,13 +60,13 @@ Octopus Deploy will connect via username/password to SQL Server, so let's set up
 6. In the General page:
 
    a. Enter the Login Name as `OctopusDeploy`.
-   
+
    b. Change type to `SQL Server Authentication`.
-   
+
    c. Enter a password.
-   
+
    d. Uncheck `Enforce password policy`.
-   
+
    e. Change the Default database to `OctopusDeploy`.
 
    ![New User](3-database-user.png)
@@ -79,7 +91,7 @@ Install Server
 
 1. Download [Octopus Server](https://octopus.com/downloads).
 
-2. Launch `Octopus.`bunch_of_numbers`.msi`.
+2. Launch `Octopus.`bunch_of_numbers`.msi`.  (Careful, don't install ~~Octopus.Tentacle.###.msi~~ yet.)
 
 3. Push Next a bunch of times.
 
@@ -130,7 +142,7 @@ The tentacle is the agent running on each machine that Octopus will deploy softw
 4. Click `Getting Started` to launch the tentacle setup wizard.
 
 5. Choose `Listening Tentacle`.
-     
+
    A listening tentacle accepts connections from the Octopus server. This is the fastest deployment approach.
 
    A polling tentacle periodically reaches out to the Octopus server asking for things to do.  This can overcome firewalls where the production network is locked down to inbound traffic.
@@ -170,10 +182,10 @@ Octopus Deploy packages are zip files in NuGet format that include all the conte
 9. Restart both `TeamCity Server` and `TeamCity Build Agent` so they'll get the new `PATH` environment variable.  Restart any other services that depend on `PATH`.
 
 
-TeamCity Plugin Install
------------------------
+Octopus Plugin for TeamCity Install
+-----------------------------------
 
-1. Download the [TeamCity plugin](https://octopus.com/downloads) (Windows 32-bit).
+1. Download the [TeamCity plugin](https://octopus.com/downloads) (Windows 32-bit) from the Octopus downloads page (scroll down to "Other tools").
 
 2. Launch the TeamCity dashboard at http://localhost:8080/
 
@@ -185,4 +197,4 @@ TeamCity Plugin Install
 
 6. Click `Upload zip` and upload `Octopus.TeamCity.zip`.
 
-7. Click `Restart server` to apply the changes.
+7. Click `Enable Plugin` to turn on this plugin.

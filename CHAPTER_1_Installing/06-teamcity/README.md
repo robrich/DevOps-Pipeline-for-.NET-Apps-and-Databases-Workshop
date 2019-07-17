@@ -27,6 +27,18 @@ You could choose to make this a domain user rather than a local user.
 
 7. Open the newly created user, choose `Member Of`, and add `Administrators`.  The user may stop and start services, configure IIS settings, or other behaviors restricted to administrative users, so best to give this account access up front.
 
+8. Start menu -> Administrative tools -> `Local Security Policy`.
+
+9. Navigate to `Local Policies` -> `User Rights Assignment`.
+
+10. Open `Log on as a service`.
+
+11. Click `Add User or Group`.
+
+12. Add the `TeamCity` user.
+
+13. Click OK many times.
+
 
 Install
 -------
@@ -80,13 +92,13 @@ TeamCity will connect via JDBC username/password to SQL Server, so let's set up 
 6. In the General page:
 
    a. Enter the Login Name as `TeamCity`.
-   
+
    b. Change type to `SQL Server Authentication`.
-   
+
    c. Enter a password.
-   
+
    d. Uncheck `Enforce password policy`.
-   
+
    e. Change the Default database to `TeamCity`.
 
    ![New User](10-database-user.png)
@@ -117,15 +129,21 @@ Configure
 
    a. `MS SQL Server` as the database type.
 
-   b. Click `Refresh JDBC Drivers`.
+   b. Click `Download JDBC Drivers`.
 
-   c. Enter the database name you created above.
+   c. Click `Refresh JDBC Drivers`.
 
-   d. Enter the username and password you created above.
+   d. If it can't find the JDBC driver, download [Microsoft JDBC Driver](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774), unzip `sqljdbc_6.0.8112.100_enu.exe` to a convenient directory, and from the `enu\jre8` folder copy `sqljdbc42.jar` to `C:\ProgramData\JetBrains\TeamCity\lib\jdbc`.
 
-   ![Database Configuration](12-database-configuration.png)
+   e. Click `Refresh JDBC Drivers` and choose `MS SQL Server JDBC`.
 
-   e. Click Proceed.
+   f. Enter the database name you created above.
+
+   g. Enter the username and password you created above.
+
+      ![Database Configuration](12-database-configuration.png)
+
+   h. Click Proceed.
 
 3. Click next a few times.
 

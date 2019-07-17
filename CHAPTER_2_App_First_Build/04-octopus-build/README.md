@@ -83,7 +83,7 @@ Validate it
 
 2. Note there are 2 environments, 2 deployment targets, and 1 target role.
 
-3. In Target Status, are they "Healthy" or "Healthy with warnings"? 
+3. In Target Status, are they "Healthy" or "Healthy with warnings"?
 
 4. Click on the status.
 
@@ -130,6 +130,8 @@ Next we need to build an Octopus Deploy package, push it to the Octopus server, 
     The field is set to `%build.number%`
 
 12. Set `Source path` to the path we found above: `Site\bin\Release\netcoreapp2.2\publish`.
+
+    If you're using a different version of .NET Core for your website, this path may be different.  Check the TeamCity build logs in step 3 above for the path to your published content.
 
 13. Set the `Output path` to `dist`
 

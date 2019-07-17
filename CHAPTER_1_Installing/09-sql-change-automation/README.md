@@ -38,8 +38,8 @@ SSMS Plugin Install
    If SQL Server Management Studio is open, the installer will prompt you to close it before it can continue.
 
 
-TeamCity Plugin Install
------------------------
+SQL Change Automation Plugin for TeamCity Install
+-------------------------------------------------
 
 1. Download the [TeamCity plugin](https://www.red-gate.com/dlmas/TeamCity-download)
 
@@ -53,7 +53,7 @@ TeamCity Plugin Install
 
 6. Click `Upload zip` and upload `sqlchangeautomation-teamcity.zip`.
 
-7. Click `Restart server` to apply the changes.
+7. Click `Enable Plugin` to turn on this plugin.
 
 
 MSBuild Tools

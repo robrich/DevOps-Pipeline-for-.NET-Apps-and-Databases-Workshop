@@ -11,7 +11,7 @@ Install
 
 2. Inside `Internet Information Services`, inside `Web Management Tools`, turn on `IIS Management Console`.
 
-3. Inside `Internet Information Services`, inside `World Wide Web Services`, inside `Application Development Features` turn on `ASP.NET 4.6`.  Many other things will turn on when you choose this.
+3. Inside `Internet Information Services`, inside `World Wide Web Services`, inside `Application Development Features` turn on `ASP.NET 4.7` (or the version bundled with your OS).  Many other things will turn on when you choose this.
 
    ![Enable IIS](1-enable-iis.png)
 
